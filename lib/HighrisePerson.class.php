@@ -29,6 +29,7 @@ require_once('HighriseEntity.class.php');
 			$xml->addChild("company-name",$this->getCompanyName());
 			$xml->addChild("first-name",$this->getFirstName());
 			$xml->addChild("last-name",$this->getLastName());
+			$xml->addChild("title",$this->getTitle());
 			$subject_datas = $xml->addChild("subject_datas");
 			$subject_datas->addAttribute("type", "array");
 			foreach($this->customfields as $custom_field) {
